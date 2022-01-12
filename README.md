@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://zeerobit.github.io/NFTcard/)
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-card-with-html5-and-custom-css-properties-a3KLTEVH_]
+- Live Site URL: [https://zeerobit.github.io/NFTcard/]
 
 ## My process
 - 
