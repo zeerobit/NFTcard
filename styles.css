@@ -151,14 +151,14 @@ ul {
   border-bottom: 1px solid var(--line);
 }
 
-.crypto {
+.price {
   color: var(--cyan);
   font-size: 1.1rem;
   font-weight: 600;
   position: relative;
 }
 
-.crypto::before {
+.price::before {
   content: url(images/icon-ethereum.svg);
   position: absolute;
   left: -1rem;
