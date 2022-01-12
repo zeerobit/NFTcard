@@ -91,7 +91,7 @@ body {
   box-shadow: 0px 30px 5px 20px rgb(12, 23, 41);
 }
 
-.nft__img__wrapper {
+.nft-img__wrapper {
   border-radius: 0.45rem;
   overflow: hidden;
   position: relative;
@@ -215,4 +215,14 @@ ul {
 .attribution a {
   color: var(--soft_blue);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 20rem) {
+  .author__info {
+    font-size: 0.9rem;
+  }
+
+  .attribution {
+    font-size: 0.75rem;
+  }
 }
