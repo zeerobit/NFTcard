@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Karla:wght@400;700&family=Outfit:wght@300;400;600&family=Poppins:wght@200;400;600&display=swap");
+
+// https://piccalil.li/blog/a-modern-css-reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  /* primary colors */
+  --soft_blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* neutral colors */
+  --main_bg: hsl(217, 54%, 11%);
+  --card_bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 1.12rem;
+  padding: 1.5rem;
+  background-color: var(--main_bg);
+  font-family: Outfit, sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+.nft__card {
+  max-width: 20.5rem;
+  padding: 1.5rem;
+  background-color: var(--card_bg);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  box-shadow: 0px 30px 5px 20px rgb(12, 23, 41);
+}
+
+.nft__img__wrapper {
+  border-radius: 0.45rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 255, 247, 0.4);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 300ms ease-out;
+}
+
+.overlay:hover,
+.overlay:active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 > a {
+  margin-top: 1.5rem;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+h1 > a:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--soft_blue);
+  line-height: 1.4;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  list-style: none;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.crypto {
+  color: var(--cyan);
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.crypto::before {
+  content: url(images/icon-ethereum.svg);
+  position: absolute;
+  left: -1rem;
+  top: 0.1rem;
+}
+
+.clock {
+  color: var(--soft_blue);
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.clock::before {
+  content: url(images/icon-clock.svg);
+  position: absolute;
+  left: -1.3rem;
+  top: 0.1rem;
+}
+
+.author__info {
+  font-size: 1.15rem;
+  margin-top: 2rem;
+  display: flex;
+  color: var(--white);
+}
+
+.author__info > a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.author__info > a:hover {
+  color: var(--cyan);
+}
+
+.author__info span {
+  color: var(--soft_blue);
+  padding-right: 0.2rem;
+}
+
+.author__img {
+  height: 2rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.attribution {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--white);
+}
+.attribution a {
+  color: var(--soft_blue);
+  text-decoration: none;
+}
