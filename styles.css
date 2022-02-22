@@ -158,7 +158,7 @@ ul {
   content: url(images/icon-ethereum.svg);
   position: absolute;
   left: -1rem;
-  top: 0.1rem;
+  top: 0.21rem;
 }
 
 .clock {
@@ -171,31 +171,31 @@ ul {
   content: url(images/icon-clock.svg);
   position: absolute;
   left: -1.3rem;
-  top: 0.1rem;
+  top: 0.16rem;
 }
 
-.author__info {
+.creator {
   font-size: 1.15rem;
   margin-top: 2rem;
   display: flex;
   color: var(--white);
 }
 
-.author__info > a {
+.creator__name > a {
   color: var(--white);
   text-decoration: none;
 }
 
-.author__info > a:hover {
+.creator__name > a:hover {
   color: var(--cyan);
 }
 
-.author__info span {
+.creator__name span {
   color: var(--soft_blue);
   padding-right: 0.2rem;
 }
 
-.author__img {
+.creator__img {
   height: 2rem;
   border: 1px solid var(--white);
   border-radius: 50%;
