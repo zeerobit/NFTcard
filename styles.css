@@ -82,6 +82,16 @@ body {
   place-content: center;
 }
 
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .nft__card {
   max-width: 20.5rem;
   padding: 1.5rem;
@@ -212,6 +222,8 @@ ul {
   color: var(--soft_blue);
   text-decoration: none;
 }
+
+/* for mobile devices 320px and lower  */
 
 @media only screen and (max-width: 20rem) {
   .author__info {
