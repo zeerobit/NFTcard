@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/nft-card-with-html5-and-custom-css-properties-a3KLTEVH_]
-- Live Site URL: [https://zeerobit.github.io/NFTcard/]
+- Solution URL: https://www.frontendmentor.io/solutions/nft-card-with-html5-and-custom-css-properties-a3KLTEVH_
+- Live Site URL: https://nftcard.pages.dev/
 
 ## My process
 - 
